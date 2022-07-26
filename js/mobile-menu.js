@@ -2,13 +2,13 @@
   const refs = {
     openMenuBtn: document.querySelector(".mob-menu-open"),
     closeMenuBtn: document.querySelector(".mob-menu-close"),
-    modal: document.querySelector(".mob-menu"),
+    menu: document.querySelector(".mob-menu"),
   };
 
-  refs.openMenuBtn.addEventListener("click", toggleMenu);
-  refs.closeMenuBtn.addEventListener("click", toggleMenu);
+  refs.openMenuBtn.addEventListener("click", toggleModal);
+  refs.closeMenuBtn.addEventListener("click", toggleModal);
 
-  function toggleMenu() {
+  function toggleModal() {
     refs.menu.classList.toggle("is-hidden");
   }
 })();
