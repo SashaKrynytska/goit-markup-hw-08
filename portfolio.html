@@ -30,14 +30,12 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link link" href="./">Студия</a>
+                <a class="nav__link link nav__link--current current" href="./"
+                  >Студия</a
+                >
               </li>
               <li class="nav__item">
-                <a
-                  class="nav__link link nav__link--current current"
-                  href="./portfolio.html"
-                  >Портфолио</a
-                >
+                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link link" href="">Контакты</a>
@@ -70,7 +68,76 @@
                 +38 096 111 11 11</a
               >
             </li>
+
+            <!--МОБИЛЬНОЕ МЕНЮ-->
           </ul>
+          <button type="button" class="mob-menu-open">
+            <svg class="menu-24" width="24" height="16">
+              <use href="./images/sprite.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!--
+          <button class="mobile__menu__btn" type="button" data-menu-button>
+            <svg class="mobile__menu__icon" width="24px" height="16px">
+              <use
+                class="mobile__menu__burger"
+                href="./images/icons.svg#mobile-menu"
+              ></use>
+              <use
+                class="mobile__menu__close"
+                href="./images/icons.svg#mobile-close"
+              ></use>
+            </svg>
+          </button>-->
+
+      <div class="mob-menu is-hidden">
+        <div class="container-menu">
+          <button type="button" class="mob-menu-close">
+            <svg class="menu-close-24" width="19" height="19">
+              <use href="./images/sprite.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link current">Студия</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link">Портфолио</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="mob-menu-bottom">
+            <ul class="mob-contacts-list list">
+              <li class="mob-contacts-item">
+                <a href="" class="mob-contacts-link current"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts-item"></li>
+              <a href="" class="mob-contacts-link">info@devstudio.com</a>
+            </ul>
+
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Instagram</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link"> Twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -302,12 +369,12 @@
       </section>
     </main>
 
-    <!--Футер
+    <!--Футер-->
     <footer>
       <section class="footer">
-        <div class="container">
-          <div class="footer__containers">
-            <div class="footer__primary-container">
+        <div class="container footer__containers">
+          <div class="primary-second">
+            <div class="primary-container">
               <a class="logo" href="/"
                 >Web<span class="logo--light">Studio</span></a
               >
@@ -328,7 +395,7 @@
               </ul>
             </div>
 
-            <div class="footer__secondary-container">
+            <div class="secondary-container">
               <h3 class="footer-title">присоединяйтесь</h3>
 
               <ul class="footer__social social">
@@ -403,35 +470,36 @@
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="footer__third-container">
-              <h3 class="footer-title">Подпишитесь на рассылку</h3>
-              <div class="signup">
-                <form name="signup__form" autocomplete="on" novalidate>
-                  <label for="user-mail">
-                    <input
-                      class="signup__email"
-                      type="email"
-                      name="email"
-                      placeholder="E-mail"
-                      id="user-mail"
-                    />
-                  </label>
+          <div class="footer__third-container">
+            <h3 class="footer-title">Подпишитесь на рассылку</h3>
+            <div class="signup">
+              <form name="signup__form" autocomplete="on" novalidate>
+                <label for="user-mail">
+                  <input
+                    class="signup__email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    id="user-mail"
+                  />
+                </label>
 
-                  <button class="signup__btn" type="submit">
-                    Подписаться
-                    <svg class="signup__icon" width="24" height="24">
-                      <use href="./images/sprite.svg#icon-icon-send"></use>
-                    </svg>
-                  </button>
-                </form>
-              </div>
+                <button class="signup__btn" type="submit">
+                  Подписаться
+                  <svg class="signup__icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </footer>
-    -->
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
