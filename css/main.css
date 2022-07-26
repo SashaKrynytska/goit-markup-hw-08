@@ -477,8 +477,8 @@ body.no-scroll {
 
 .mob-menu-close {
   position: absolute;
-  top: -21px;
-  right: 5px;
+  top: -31px;
+  right: -7px;
   fill: var(--title-text-color);
   border-color: transparent;
   background-color: transparent;
