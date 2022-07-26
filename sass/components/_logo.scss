@@ -1,0 +1,29 @@
+/**
+|==================
+|Лого
+|==================
+*/
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  &--light {
+    color: var(--primary-white-color);
+  }
+
+  &--dark {
+    color: #000000;
+  }
+}
