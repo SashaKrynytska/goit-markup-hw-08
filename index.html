@@ -400,7 +400,7 @@
                       type="image/jpg"
                     />
 
-                    <!-- tablet screen -->
+                    <!-- mobile screen -->
 
                     <source
                       media="(max-width: 767px)"
@@ -489,10 +489,45 @@
             <li class="team-list__item">
               <article class="team-list__card">
                 <div class="team-list__card-thumb">
-                  <img
-                    src="./images/nikolaj_tarasov.jpg"
-                    alt="Маркетолог Николай Тарасов"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img-3lg.jpg    1x,
+                        ./images/team/img-3lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img-3md.jpg    1x,
+                        ./images/team/img-3md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img-3sm.jpg    1x,
+                        ./images/team/img-3sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/team/img-3sm.jpg"
+                      alt="Маркетолог Николай Тарасов"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="team-list__card-content">
                   <h3 class="team-list__name">Николай Тарасов</h3>
@@ -564,10 +599,45 @@
             <li class="team-list__item">
               <article class="team-list__card">
                 <div class="team-list__card-thumb">
-                  <img
-                    src="./images/mihail_ermakov.jpg"
-                    alt="UI-дизайнер Михаил Ермаков"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img-4lg.jpg    1x,
+                        ./images/team/img-4lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img-4md.jpg    1x,
+                        ./images/team/img-4md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img-4sm.jpg    1x,
+                        ./images/team/img-4sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/team/img-4sm.jpg"
+                      alt="UI-дизайнер Михаил Ермаков"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="team-list__card-content">
                   <h3 class="team-list__name">Михаил Ермаков</h3>
