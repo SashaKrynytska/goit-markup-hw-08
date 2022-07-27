@@ -1,8 +1,8 @@
 .hero {
-  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
+
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(
@@ -27,6 +27,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    background-size: 768px 400px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -50,6 +51,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    background-size: 1600px 600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -61,7 +63,6 @@
   }
 
   // для ретина десктоп версия
-
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
