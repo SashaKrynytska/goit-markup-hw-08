@@ -268,10 +268,49 @@
             <li class="team-list__item">
               <article class="team-list__card">
                 <div class="team-list__card-thumb">
-                  <img
-                    src="./images/igor_demianenko.jpg"
-                    alt="Дизайнер Игорь Демьяненко"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img-1lg.jpg    1x,
+                        ./images/team/img-1lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img-1md.jpg    1x,
+                        ./images/team/img-1md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img-1sm.jpg    1x,
+                        ./images/team/img-1sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      srcset="
+                        ./images/team/img-1sm.jpg    1x,
+                        ./images/team/img-1md@2x.jpg 2x
+                      "
+                      src="./images/team/img-1sm.jpg"
+                      alt="Дизайнер Игорь Демьяненко"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="team-list__card-content">
                   <h3 class="team-list__name">Игорь Демьяненко</h3>
