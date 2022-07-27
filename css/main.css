@@ -47,7 +47,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -223,13 +223,19 @@ body.no-scroll {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .filter {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 35px;
   }
 }
 .filter__item:not(:last-child) {
@@ -356,10 +362,6 @@ body.no-scroll {
   color: var(--accent-color);
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 /*Хедер-контакты*/
 .auth-nav {
   display: none;
@@ -450,6 +452,7 @@ body.no-scroll {
   padding-top: 48px;
   padding-bottom: 48px;
   overflow: auto;
+  z-index: 1;
 }
 .mob-menu .container-menu {
   display: -webkit-box;
@@ -494,8 +497,9 @@ body.no-scroll {
 }
 
 .mob-menu-link {
+  font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -507,13 +511,16 @@ body.no-scroll {
 .mob-contacts-item:not(:last-child) {
   margin-bottom: 32px;
 }
-.mob-contacts-item:not(:last-child) .mob-contacts-link {
-  font-size: 24px;
+
+.mcl {
+  font-weight: 500;
+  font-size: 30px;
   line-height: 1.18;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-@media screen and (min-width: 480px) {
-  .mob-contacts-item:not(:last-child) .mob-contacts-link {
+@media screen and (min-width: 400px) {
+  .mcl {
     font-size: 34px;
   }
 }
@@ -551,12 +558,16 @@ body.no-scroll {
   }
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
   background-position: center;
-  background-size: cover;
+  background-size: 480px 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-sm.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm.jpg);
 }
@@ -625,9 +636,11 @@ body.no-scroll {
 @media screen and (min-width: 1200px) {
   .features {
     padding-bottom: 0px;
+    padding-top: 94px;
   }
 }
-.features .flex-list {
+
+.flex-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,32 +650,32 @@ body.no-scroll {
   padding: 0;
   list-style: none;
   gap: 30px;
-  /* Features uppercase subtitle */
 }
-.features .flex-list__item {
+.flex-list__item {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .features .flex-list__item {
+  .flex-list__item {
     width: calc((100% - var(--card-set-gap)) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .features .flex-list__item {
+  .flex-list__item {
     width: calc((100% - var(--card-set-gap) * 3) / 4);
   }
 }
-.features .flex-list__text {
+.flex-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 768px) {
-  .features .flex-list__text {
+  .flex-list__text {
     text-align: left;
   }
 }
-.features .flex-list .flex-list__box {
+
+.flex-list__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,10 +692,12 @@ body.no-scroll {
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.features .flex-list .flex-list__box:focus {
+.flex-list__box:focus {
   outline: transparent;
 }
-.features .flex-list .flex-list__title {
+
+/* Features uppercase subtitle */
+.flex-list__title {
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -692,6 +707,11 @@ body.no-scroll {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .flex-list__title {
+    text-align: start;
+  }
 }
 
 .work {
