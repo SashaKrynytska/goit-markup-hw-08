@@ -289,7 +289,7 @@
                       type="image/jpg"
                     />
 
-                    <!-- tablet screen -->
+                    <!-- mobile screen -->
 
                     <source
                       media="(max-width: 767px)"
@@ -301,10 +301,6 @@
                     />
 
                     <img
-                      srcset="
-                        ./images/team/img-1sm.jpg    1x,
-                        ./images/team/img-1md@2x.jpg 2x
-                      "
                       src="./images/team/img-1sm.jpg"
                       alt="Дизайнер Игорь Демьяненко"
                       width="450"
@@ -383,10 +379,45 @@
             <li class="team-list__item">
               <article class="team-list__card">
                 <div class="team-list__card-thumb">
-                  <img
-                    src="./images/olga_repina.jpg"
-                    alt="Frontend-разработчик Ольга Репина"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img-2lg.jpg    1x,
+                        ./images/team/img-2lg@3x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img-2md.jpg    1x,
+                        ./images/team/img-2md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img-2sm.jpg    1x,
+                        ./images/team/img-2sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/team/img-2sm.jpg"
+                      alt="Frontend-разработчик Ольга Репина"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="team-list__card-content">
                   <h3 class="team-list__name">Ольга Репина</h3>
